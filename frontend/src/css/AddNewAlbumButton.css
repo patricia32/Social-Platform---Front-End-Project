@@ -1,0 +1,15 @@
+.add-album-container {
+    width: 150px;
+    height: 150px;
+    border: 2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.add-album-content {
+    font-size: 3em;
+    color: #aaa;
+}

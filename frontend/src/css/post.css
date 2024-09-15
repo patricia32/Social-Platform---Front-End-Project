@@ -1,0 +1,129 @@
+.post-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 595px;
+    height: max-content;
+}
+
+.btn-icon {
+    background-color: #eeeeee;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.btn-icon span {
+    margin-left: 4px;
+}
+
+.actions {
+    display: flow;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.post-input-container{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.post-profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.whatsonyourmind-field {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 8px;
+    height: 40px;
+    font-family: Cambria;
+    font-size: 18px;
+    flex: 1;
+    border: none;
+    color: white;
+    outline: none;
+    margin-right: 20px;
+}
+
+.post-name-date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.post-name-date .name {
+    font-weight: bold;
+}
+
+.post-name-date .date {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 15px;
+}
+
+.post-description {
+    position: relative;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.post-container {
+    display: block;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.post-box-profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 8px;
+    margin-right: 10px;
+}
+.post-picture {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 450px;
+    object-fit: scale-down;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

@@ -1,0 +1,60 @@
+/* Adaugă sau actualizează aceste stiluri */
+
+.albums-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    padding: 20px; /* padding în jurul containerului */
+    background-color: #f0f2f5; /* culoarea de fundal */
+}
+
+.album-square {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.add-album {
+    font-size: 50px;
+}
+
+.album-preview-container {
+    width: 100%;
+    cursor: pointer;
+}
+
+.album-cover-photo {
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.album-name {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.back-button {
+    background-color: cadetblue;
+    width: 70px;
+    height: 30px;
+    border: none; /* Elimină conturul butonului */
+    border-radius: 10px; /* Rotunjirea marginilor butonului */
+    margin-right:90%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adaugă o umbră subtilă butonului */
+    cursor: pointer; /* Transformă cursorul într-o mână la hover */
+    transition: all 0.3s ease; /* Adaugă o tranziție lină la schimbările de stare ale butonului */
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.back-button:hover {
+    background-color: steelblue; /* Schimbă culoarea butonului la hover */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Mărește umbra butonului la hover */
+}

@@ -1,0 +1,163 @@
+.photo-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* creează trei coloane cu dimensiuni egale */
+    gap: 10px; /* spațiul între imagini */
+    padding: 20px; /* padding în jurul containerului */
+    background-color: #f0f2f5; /* culoarea de fundal */
+}
+
+.photo img {
+    width: 100%; /* face ca imaginea să ocupe întreaga lățime a coloanei */
+    height: auto; /* menține proporția imaginii */
+    border-radius: 4px; /* rotunjirea colțurilor imaginii */
+}
+
+.photo img {
+    width: 100%; /* asigură că imaginea umple div-ul */
+    height: 200px; /* o înălțime fixă, sau poți să folosești auto pentru proporții */
+    object-fit: cover; /* asigură că imaginea acoperă spațiul fără a se distorsiona */
+    border-radius: 4px; /* rotunjirea colțurilor */
+}
+
+.photo {
+    position: relative;
+    /* restul stilurilor tale */
+}
+
+.edit-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.photo-edit{
+    width:20px;
+}
+
+.edit-button button {
+    background: transparent;
+    color: black;
+    padding: 4px;
+    line-height: 1;
+    font-weight: bold;
+    font-size: 23px;
+}
+.edit-menu {
+    position: absolute;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    top: 35px;
+    width: auto; /* Setează lățimea meniului pentru a se ajusta la conținut */
+    min-width: 150px; /* Setează o lățime minimă pentru meniu */
+}
+
+.edit-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.edit-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    white-space: normal; /* Permite textului să se împartă pe două rânduri */
+}
+
+.photo-list {
+    justify-content: space-around; /* Ajustează aceasta în funcție de preferințele tale */
+    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 coloane */
+    gap: 5px;    flex-wrap: wrap;
+}
+
+.photo_edit {
+    border: 2px solid #f0f0f0; /* bordură subtilă */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* umbră ușoară */
+    width: 100px; /* Scade spațiul necesar pentru margini */
+    margin: 5px;  /* lățimea fixă pentru toate imaginile */
+    height: 100px; /* înălțimea fixă pentru toate imaginile */
+    object-fit: cover; /* se asigură că imaginile se potrivesc fără a fi deformate */
+    cursor: pointer; /* indică faptul că imaginea este interactivă */
+    transition: transform 0.3s, box-shadow 0.3s; /* animație pentru efectele de hover */
+}
+
+.edit-menu li:hover {
+    background-color: #f2f2f2;
+    color: #333; /* Schimbă culoarea textului la hover */
+}
+
+
+.edit-menu.show-menu {
+    display: block;
+}
+
+.album-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 60%; /* lățimea modalului a fost mărită */
+    max-width: 600px; /* o lățime maximă pentru a asigura că nu devine prea mare pe ecranele mari */
+    min-width: 300px; /* o lățime minimă pentru a asigura lizibilitatea pe ecranele mici */
+    height: auto; /* înălțimea se ajustează în funcție de conținut */
+    max-height: 80vh; /* o înălțime maximă pentru a se potrivi în viewport */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    overflow-y: auto; /* permite derularea dacă conținutul depășește înălțimea */
+}
+
+.album-modal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.album-modal li {
+    padding: 12px 24px; /* mărit spațiul pentru a facilita click-ul */
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.album-modal li:last-child {
+    border-bottom: none;
+}
+
+.album-modal li:hover {
+    background-color: #f7f7f7;
+}
+
+.album-modal-close {
+    cursor: pointer;
+    background: #ff5a5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px; /* puțin mai mult spațiu deasupra butonului */
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.album-modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
